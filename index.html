@@ -15,18 +15,22 @@
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
     "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.1/client",
     "vite": "https://aistudiocdn.com/vite@^7.2.6",
     "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
 </head>
-<body>
+  <body>
     <div id="root"></div>
+    <!-- 
+      Netlify Form Detection 
+      This hidden form allows Netlify to detect the fields during the build process.
+    -->
     <form name="booking-contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="booking-contact" /> 
-
       <input type="text" name="name" />
+      <input type="text" name="clinicName" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
     </form>

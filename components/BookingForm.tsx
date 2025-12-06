@@ -7,6 +7,7 @@ export const BookingForm: React.FC<{ variant?: 'light' | 'dark' }> = ({ variant 
   const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
+    clinicName: '',
     email: '',
     phone: ''
   });
@@ -37,7 +38,7 @@ export const BookingForm: React.FC<{ variant?: 'light' | 'dark' }> = ({ variant 
       .then(() => {
         setLoading(false);
         setSuccess(true);
-        setFormData({ name: '', email: '', phone: '' });
+        setFormData({ name: '', clinicName: '', email: '', phone: '' });
         // Reset success message after 5 seconds
         setTimeout(() => setSuccess(false), 5000);
       })
@@ -84,6 +85,17 @@ export const BookingForm: React.FC<{ variant?: 'light' | 'dark' }> = ({ variant 
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name" 
+          className={inputClasses}
+        />
+      </div>
+      <div>
+        <input 
+          required 
+          type="text"
+          name="clinicName"
+          value={formData.clinicName}
+          onChange={handleChange}
+          placeholder="Clinic / Business Name" 
           className={inputClasses}
         />
       </div>
