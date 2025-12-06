@@ -21,13 +21,11 @@
 }
 </script>
 </head>
-  <body>
+<body>
     <div id="root"></div>
-    <!-- 
-      Netlify Form Detection 
-      This hidden form allows Netlify to detect the fields during the build process.
-    -->
     <form name="booking-contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="booking-contact" /> 
+
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
