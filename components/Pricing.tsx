@@ -47,7 +47,7 @@ export const Pricing: React.FC = () => {
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-100 px-2 py-0.5 rounded-full">Save £150</span>
                   </div>
                   <p className="text-stone-500 text-sm leading-relaxed">
-                    We personally build your system for you. This includes setting up your specific treatments, inputting your clinic policies, and training the AI to match your unique tone of voice.
+                    As a one time fee, we personally build your system for you. This includes setting up your specific treatments, inputting your clinic policies and training the AI to match your unique tone of voice.
                   </p>
                 </div>
               </div>
