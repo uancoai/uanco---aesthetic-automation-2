@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 
 export const ProductShowcase: React.FC = () => {
   return (
-    <Section className="bg-white overflow-visible pt-10 pb-32">
-      <div className="text-center max-w-3xl mx-auto mb-20">
+    <Section className="bg-white pt-10 pb-32">
+      <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
         <span className="text-xs font-bold tracking-[0.2em] text-stone-400 uppercase mb-4 block">The Platform</span>
         <h2 className="text-3xl md:text-5xl font-light text-stone-900 mb-6">
           Powerful compliance. <br/>
@@ -20,9 +20,9 @@ export const ProductShowcase: React.FC = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        {/* Background blobs for depth - Neutral */}
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-stone-50 rounded-full blur-3xl -z-10 opacity-60"></div>
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-stone-100 rounded-full blur-3xl -z-10 opacity-50"></div>
+        {/* Background blobs for depth - Neutral - Added overflow-hidden via Section component ensures these don't break layout */}
+        <div className="absolute top-1/4 left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-stone-50 rounded-full blur-3xl -z-10 opacity-60"></div>
+        <div className="absolute bottom-0 right-1/4 w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-stone-100 rounded-full blur-3xl -z-10 opacity-50"></div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
@@ -71,6 +71,7 @@ export const ProductShowcase: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                className="w-full flex justify-center lg:justify-end"
              >
                 <MobileChatMockup />
              </motion.div>
