@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
   {
     question: "Do I need to be techy to use this?",
-    answer: "Not at all. We handle the full setup within 24 hours. Once installed it runs automatically in the background."
+    answer: "Not at all. We handle the full setup. Once installed it runs automatically in the background."
   },
   {
     question: "Does it replace my booking system?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Can I cancel anytime?",
-    answer: "There is a 3-month minimum commitment to allow for your personalised setup. After that, you can cancel anytime."
+    answer: "There is a 3-month minimum commitment to allow for your personalised setup. After that, you can either upgrade or cancel your subscription."
   }
 ];
 

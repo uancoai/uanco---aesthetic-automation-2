@@ -114,7 +114,7 @@ export const ROICalculator: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <SliderInput 
-                label="Admin Mins / Client"
+                label="Admin Mins per Client"
                 tooltip="Time spent manually replying, screening medical history, and booking a single client."
                 value={adminTimePerLead} 
                 setValue={setAdminTimePerLead} 

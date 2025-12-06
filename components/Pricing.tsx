@@ -27,7 +27,7 @@ export const Pricing: React.FC = () => {
                 <div className="text-left">
                   <div className="flex items-center gap-3 mb-1">
                     <p className="font-bold text-stone-900 text-lg">Monthly Subscription</p>
-                    <span className="text-[10px] font-bold uppercase tracking-wider bg-stone-200 text-stone-600 px-2 py-0.5 rounded-full">Save 50%</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider bg-stone-200 text-stone-600 px-2 py-0.5 rounded-full">Save £50</span>
                   </div>
                   <p className="text-stone-500 text-sm leading-relaxed">
                     Lock in the founder rate of £49/month for your first three months. Standard pricing starts from £99/month after the early access period.
