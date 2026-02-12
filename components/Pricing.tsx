@@ -38,8 +38,8 @@ export const Pricing: React.FC = () => {
               {/* Setup Price */}
               <div className="flex items-start gap-5 justify-center lg:justify-start">
                 <div className="w-16 h-16 rounded-full bg-white border border-stone-200 flex flex-col items-center justify-center flex-shrink-0 shadow-sm">
-                  <span className="text-[10px] text-stone-400 line-through decoration-stone-300">£300</span>
-                  <span className="font-bold text-lg text-stone-900 leading-none">£150</span>
+                  <span className="text-[10px] text-stone-400 line-through decoration-stone-300">£150</span>
+                  <span className="font-bold text-lg text-stone-900 leading-none">£0</span>
                 </div>
                 <div className="text-left">
                   <div className="flex items-center gap-3 mb-1">
@@ -47,7 +47,7 @@ export const Pricing: React.FC = () => {
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-100 px-2 py-0.5 rounded-full">Save £150</span>
                   </div>
                   <p className="text-stone-500 text-sm leading-relaxed">
-                    As a one time fee, we personally build your system for you. This includes setting up your specific treatments, inputting your clinic policies and training the AI to match your unique tone of voice.
+                    We personally build and tailor your system for your clinic. This includes setting up your treatments, adding your clinic policies, and training the assistant to match your tone of voice.
                   </p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export const Pricing: React.FC = () => {
 
             <div className="p-5 bg-white rounded-xl mb-8 border border-stone-200 shadow-sm text-left">
                <p className="text-stone-800 text-sm font-medium leading-relaxed">
-                 Limited early founders access spots remain for 2025. Once these fill onboarding returns to standard pricing.
+                 Limited early founders spots remaining. When these fill, onboarding returns to £150.
                </p>
             </div>
 
